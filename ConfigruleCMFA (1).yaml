@@ -48,35 +48,21 @@ proxies:
       headers:
         Host: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
     udp: true
-  - name: rush55
+  - name: adzraaa
     server: ava.game.naver.com
     port: 443
-    type: vless
-    uuid: 46beb778-cdcb-4f56-a46f-e34b48b1c1ea
+    type: vmess
+    uuid: 47c6fdb7-db37-4285-8080-3a94b3c9cb5d
+    alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.db02.wcid.biz.id
+    servername: ava.game.naver.com.sg-gd.wc-webkuy.web.id
     network: ws
     ws-opts:
-      path: /vless-ws
+      path: /vmess
       headers:
-        Host: ava.game.naver.com.db02.wcid.biz.id
-    udp: true
-  - name: rush555
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 9df07563-9088-44ec-b3f7-a5b55f6773a1
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.sg-do5.esge.web.id
-    network: ws
-    ws-opts:
-      path: /vless-ws
-      headers:
-        Host: ava.game.naver.com.sg-do5.esge.web.id
+        Host: ava.game.naver.com.sg-gd.wc-webkuy.web.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -84,18 +70,16 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - rush55
-      - rush555
-      - rusdiii
+      - shanumm
+      - adzraaa
      
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - rusdiii
-      - rush55
-      - rush555
+      - adzraaa
+      - shanumm
       
   - name: IKLAN
     type: select
