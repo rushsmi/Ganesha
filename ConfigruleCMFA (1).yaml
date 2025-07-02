@@ -32,21 +32,21 @@ dns:
     - 1.1.1.1
     - 112.215.203.254  
 proxies: 
-  - name: rusdiii
+  - name: shanumm
     server: ava.game.naver.com
     port: 443
     type: vmess
-    uuid: 12bc1799-c333-445f-b294-06c8d90493fd
+    uuid: a36466cf-2642-4bda-a271-04236950c51a
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.sogud.wc-webkuy.web.id
+    servername: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: ava.game.naver.com.sogud.wc-webkuy.web.id
+        Host: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
     udp: true
   - name: rush55
     server: ava.game.naver.com
