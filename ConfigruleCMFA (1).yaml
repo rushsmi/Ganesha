@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254  
 proxies: 
   - name: shanumm
-    server: gocorp-integration-gojek.com
+    server: ava.game.naver.com
     port: 443
     type: vmess
     uuid: a36466cf-2642-4bda-a271-04236950c51a
@@ -41,12 +41,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: gocorp-integration-gojek.com.id-uninet5.wc-webkuy.web.id
+    servername: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: gocorp-integration-gojek.com.id-uninet5.wc-webkuy.web.id
+        Host: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
     udp: true
   - name: adzraaa
     server: gocorp-integration-gojek.com
@@ -57,15 +57,15 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: gocorp-integration-gojek.com.sg-gd.wc-webkuy.web.id
+    servername: ava.game.naver.com.sg-gd.wc-webkuy.web.id
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: gocorp-integration-gojek.com.sg-gd.wc-webkuy.web.id
+        Host: ava.game.naver.com.sg-gd.wc-webkuy.web.id
     udp: true
   - name: (shanumm)
-    server: gocorp-integration-gojek.com
+    server: ava.game.naver.com
     port: 443
     type: vmess
     uuid: 8d821777-34c7-46ad-8f15-d10949ded8e5
@@ -73,12 +73,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: gocorp-integration-gojek.com.db05.wcid.biz.id
+    servername: ava.game.naver.com.db05.wcid.biz.id
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: gocorp-integration-gojek.com.db05.wcid.biz.id
+        Host: ava.game.naver.com.db05.wcid.biz.id
     udp: true
 proxy-groups:
   - name: ID-X
