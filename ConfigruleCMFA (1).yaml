@@ -71,7 +71,7 @@ proxies:
     uuid: 8d821777-34c7-46ad-8f15-d10949ded8e5
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
     servername: ava.game.naver.com.db05.wcid.biz.id
     network: ws
