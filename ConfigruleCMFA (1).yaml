@@ -64,6 +64,22 @@ proxies:
       headers:
         Host: gocorp-integration-gojek.com.sg-gd.wc-webkuy.web.id
     udp: true
+  - name: (shanumm)
+    server: gocorp-integration-gojek.com
+    port: 443
+    type: vmess
+    uuid: 8d821777-34c7-46ad-8f15-d10949ded8e5
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gocorp-integration-gojek.com.db05.wcid.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: gocorp-integration-gojek.com.db05.wcid.biz.id
+    udp: true
 proxy-groups:
   - name: ID-X
     type: fallback
@@ -72,7 +88,7 @@ proxy-groups:
     proxies:
       - shanumm
       - adzraaa
-     
+      - (shanumm)
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -80,6 +96,7 @@ proxy-groups:
     proxies:
       - adzraaa
       - shanumm
+      - (shanumm)
       
   - name: IKLAN
     type: select
