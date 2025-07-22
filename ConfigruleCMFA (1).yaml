@@ -86,17 +86,17 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - shanumm
+      - (shanumm) 
       - adzraaa
-      - (shanumm)
+      - shanumm
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - adzraaa
+      - (shanumm) 
       - shanumm
-      - (shanumm)
+      - adzraaa
       
   - name: IKLAN
     type: select
