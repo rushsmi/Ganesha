@@ -41,12 +41,12 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.03-sni.biz.id
+    servername: ava.game.naver.com.d03.biz.id
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: ava.game.naver.com.03-sni.biz.id
+        Host: ava.game.naver.com.d03.biz.id
     udp: true
   
   - name: (shanumm)
@@ -150,4 +150,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
