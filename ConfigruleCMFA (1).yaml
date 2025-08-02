@@ -32,38 +32,23 @@ dns:
     - 1.1.1.1
     - 112.215.203.254  
 proxies: 
-  - name: shanumm
+  - name: (rusdhi)
     server: ava.game.naver.com
     port: 443
     type: vmess
-    uuid: a36466cf-2642-4bda-a271-04236950c51a
+    uuid: ea448132-c05f-4699-a7be-64cca55962d1
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
+    servername: ava.game.naver.com.03-sni.biz.id
     network: ws
     ws-opts:
-      path: /vmess
+      path: /vmess-ws
       headers:
-        Host: ava.game.naver.com.id-uninet5.wc-webkuy.web.id
+        Host: ava.game.naver.com.03-sni.biz.id
     udp: true
-  - name: adzraaa
-    server: gocorp-integration-gojek.com
-    port: 443
-    type: vmess
-    uuid: 47c6fdb7-db37-4285-8080-3a94b3c9cb5d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.sg-gd.wc-webkuy.web.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ava.game.naver.com.sg-gd.wc-webkuy.web.id
-    udp: true
+  
   - name: (shanumm)
     server: ava.game.naver.com
     port: 443
@@ -87,16 +72,14 @@ proxy-groups:
     interval: 300
     proxies:
       - (shanumm) 
-      - adzraaa
-      - shanumm
+      - (rusdhi)
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - (shanumm) 
-      - shanumm
-      - adzraaa
+      - (rusdhi)
+      - (shanumm)
       
   - name: IKLAN
     type: select
@@ -167,3 +150,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
