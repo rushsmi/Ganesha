@@ -39,7 +39,7 @@ proxies:
     uuid: ea448132-c05f-4699-a7be-64cca55962d1
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
     servername: ava.game.naver.com.d03.biz.id
     network: ws
@@ -150,5 +150,6 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
