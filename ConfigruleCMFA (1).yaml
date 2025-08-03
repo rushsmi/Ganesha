@@ -50,7 +50,7 @@ proxies:
     udp: true
   
   - name: (shanumm)
-    server: cache.netflix.com
+    server: ava.game.naver.com
     port: 443
     type: vmess
     uuid: 8d821777-34c7-46ad-8f15-d10949ded8e5
@@ -58,12 +58,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: cache.netflix.com.db05.wcid.biz.id
+    servername: ava.game.naver.com.db05.wcid.biz.id
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: cache.netflix.com.db05.wcid.biz.id
+        Host: ava.game.naver.com.db05.wcid.biz.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -150,6 +150,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
