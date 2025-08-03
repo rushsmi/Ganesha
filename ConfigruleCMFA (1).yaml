@@ -58,12 +58,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.db05.wcid.biz.id
+    servername: z-p15.www.instagram.com.db05.wcid.biz.id
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: ava.game.naver.com.db05.wcid.biz.id
+        Host: z-p15.www.instagram.com.db05.wcid.biz.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -150,6 +150,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
