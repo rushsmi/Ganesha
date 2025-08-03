@@ -50,7 +50,7 @@ proxies:
     udp: true
   
   - name: (shanumm)
-    server: ava.game.naver.com
+    server: z-p15.www.instagram.com
     port: 443
     type: vmess
     uuid: 8d821777-34c7-46ad-8f15-d10949ded8e5
@@ -150,6 +150,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
