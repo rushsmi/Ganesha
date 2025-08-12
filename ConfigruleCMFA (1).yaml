@@ -32,7 +32,6 @@ dns:
     - 1.1.1.1
     - 112.215.203.254  
 proxies: 
-proxies: 
   - name: (gosenn)
     server: stripchat.page
     port: 443
@@ -150,6 +149,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
