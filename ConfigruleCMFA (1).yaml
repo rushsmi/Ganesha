@@ -32,38 +32,38 @@ dns:
     - 1.1.1.1
     - 112.215.203.254  
 proxies: 
-  - name: (rusdhi)
-    server: ava.game.naver.com
+proxies: 
+  - name: (gosenn)
+    server: stripchat.page
     port: 443
-    type: vmess
-    uuid: ea448132-c05f-4699-a7be-64cca55962d1
-    alterId: 0
+    type: vless
+    uuid: 26f30c01-39ce-4a29-840f-267fc6205c8a
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.d03.biz.id
+    servername: stripchat.page.d03.biz.id
     network: ws
     ws-opts:
-      path: /vmess-ws
+      path: /vless-ws
       headers:
-        Host: ava.game.naver.com.d03.biz.id
+        Host: stripchat.page.d03.biz.id
     udp: true
   
-  - name: (shanumm)
-    server: ava.game.naver.com
+  - name: (ganesha)
+    server: stripchat.page
     port: 443
     type: vmess
-    uuid: 8d821777-34c7-46ad-8f15-d10949ded8e5
+    uuid: 73111500-430e-42fe-9c28-c50161ed7b5a
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.db05.wcid.biz.id
+    servername: stripchat.page.db05.wcid.biz.id
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: ava.game.naver.com.db05.wcid.biz.id
+        Host: stripchat.page.db05.wcid.biz.id
     udp: true
 proxy-groups:
   - name: ID-X
@@ -71,15 +71,15 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - (shanumm) 
-      - (rusdhi)
+      - (ganesha) 
+      - (gosenn)
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - (rusdhi)
-      - (shanumm)
+      - (gosenn)
+      - (ganesha) 
       
   - name: IKLAN
     type: select
@@ -150,6 +150,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
